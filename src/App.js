@@ -13,6 +13,8 @@ import Login from './components/Login';
 import UserHome from './components/UserHome';
 import Register from './components/Register';
 import User_reg from './components/User_reg';
+import Result from './components/Result';
+import Dashboard from './components/Dashboard';
 
 function App() {
   const [mode, setmode] = useState('dark')
@@ -49,7 +51,9 @@ function App() {
         </Route>
         <Route exact path="/register" element={<Register/>}>
           </Route>
-        <Route exact path="/reguser" element={<User_reg/>}>
+          <Route exact path="/reguser" element={<User_reg/>}>
+          </Route>
+        <Route exact path="/dashboard" element={<Dashboard mode={mode}/>}>
           </Route>
          {/* <Route exact path="/sports" element={<News pageSize="8" page='1' key="sports" mode={mode} category="sports" />}>
           </Route>

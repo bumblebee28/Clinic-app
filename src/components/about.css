@@ -15,7 +15,7 @@
     font-size: larger;
 }
 
-h1::after{
+.Team h1::after{
     content: '';
     background-color: rgb(156, 156, 156);   
     display: block;
