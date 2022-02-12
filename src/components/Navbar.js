@@ -25,7 +25,7 @@ export default function Navbar(props) {
               <Link className="nav-link active" aria-current="page" to="/login">{props.login}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/dashboard">Dashboard</Link>
+              <Link className="nav-link active" aria-current="page" to="/userAppoint">userAppoint</Link>
             </li>
             <li>
             <button type="button" className="btn shadow-none" onClick={props.togglemode}>{props.m}</button>
