@@ -15,6 +15,7 @@ import Register from './components/Register';
 import User_reg from './components/User_reg';
 import Result from './components/Result';
 import Dashboard from './components/Dashboard';
+import UserAppoint from './components/UserAppoint';
 
 function App() {
   const [mode, setmode] = useState('dark')
@@ -53,12 +54,13 @@ function App() {
           </Route>
           <Route exact path="/reguser" element={<User_reg/>}>
           </Route>
-        <Route exact path="/dashboard" element={<Dashboard mode={mode}/>}>
+        <Route exact path="/userAppoint" element={<UserAppoint mode={mode}/>}>
           </Route>
-         {/* <Route exact path="/sports" element={<News pageSize="8" page='1' key="sports" mode={mode} category="sports" />}>
+          <Route exact path="/result" element={<Result mode={mode}/>}>
           </Route>
-          <Route exact path="/science" element={<News pageSize="8" page='1' key="science" mode={mode} category="science" />}>
-          </Route> */}
+          <Route exact path="/dashboard" element={<Dashboard mode={mode}/>}>
+          </Route>
+        
       </Routes>
       <Footer mode={mode} />
     </Router>
